@@ -1,0 +1,27 @@
+<p>Új játék felvétele</p>
+
+<form >
+    <div class="form-group">
+      <label for="titleinput">Title</label>
+      <input class="form-control" type="text" name="titleinput" id="titleinput" placeholder="Enter Title" [(ngModel)]="adat.title" >
+    </div>
+   <div class="form-group">
+     <label for="saleinput">Sale Price</label>
+     <input class="form-control" type="number" name="saleinput" id="saleinput" placeholder="Enter Price" [(ngModel)]="adat.salePrice" >
+   </div>
+   <div class="form-group">
+     <label for="npriceinput">Normal Price</label>
+     <input class="form-control" type="text" name="npriceinput" id="npriceinput" placeholder="Enter Normal Price" [(ngModel)]="adat.normalPrice"  >
+   </div>
+   <div class="form-group">
+     <label for="storeinput">Store ID</label>
+     <input class="form-control" type="number" name="storeinput" id="storeinput" placeholder="Type Store ID" [(ngModel)]="adat.storeID" >
+   </div>
+  <div class="form-group">
+    <label for="gameinput">Game ID</label>
+    <input class="form-control" type="text" name="gameinput" id="gameinput" placeholder="Enter Game ID" [(ngModel)]="adat.gameID">
+  </div>
+
+<button class="btn btn-info" type="submit" (click)="save()">Submit</button>
+</form>
+

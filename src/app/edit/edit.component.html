@@ -1,25 +1,26 @@
 <p>Szerkesztés</p>
 
 <form>
-
   <div class="form-group">
-    <label for="nameinput">Activity</label>
-    <input class="form-control" type="text" name="nameinput" id="nameinput" placeholder="Enter Activity" [(ngModel)]="adat.title" >
-  </div>
-
-  <div class="form-group">
-    <label for="taglineinput">Price</label>
-    <input class="form-control" type="number" name="taglineinput" id="taglineinput" placeholder="Enter Price" [(ngModel)]="adat.salePrice" >
+    <label for="titleinput">Title</label>
+    <input class="form-control" type="text" name="titleinput" id="titleinput" placeholder="Enter Activity" [(ngModel)]="adat.title" >
   </div>
   <div class="form-group">
-    <label for="abvinput">Type</label>
-    <input class="form-control" type="text" name="abvinput" id="abvinput" placeholder="Enter the type" [(ngModel)]="adat.normalPrice"  >
+    <label for="saleinput">Sale Price</label>
+    <input class="form-control" type="text" name="saleinput" id="saleinput" placeholder="Enter Price" [(ngModel)]="adat.salePrice" >
   </div>
   <div class="form-group">
-    <label for="ibuinput">Accessibility</label>
-    <input class="form-control" type="number" name="ibuinput" id="ibuinput" placeholder="Type Accessibility" [(ngModel)]="adat.storeID" >
+    <label for="npriceinput">Normal Price</label>
+    <input class="form-control" type="text" name="npriceinput" id="npriceinput" placeholder="Enter the original price" [(ngModel)]="adat.normalPrice"  >
   </div>
-
+  <div class="form-group">
+    <label for="storeinput">Store ID</label>
+    <input class="form-control" type="text" name="storeinput" id="storeinput" placeholder="Enter Store ID" [(ngModel)]="adat.storeID" >
+  </div>
+  <div class="form-group">
+    <label for="gameinput">Game ID</label>
+    <input class="form-control" type="text" name="gameinput" id="gameinput" placeholder="Enter Game ID" [(ngModel)]="adat.gameID">
+  </div>
 
   <button class="btn btn-info" type="submit" (click)="save()" routerLink="/list">Submit</button>
 </form>
